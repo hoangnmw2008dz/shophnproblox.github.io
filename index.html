@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop Roblox - Blox Fruits | Grow a Garden | Steal a Brainot</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">ShopRobloxVN</a>
+      <nav class="nav">
+        <button class="nav-btn" data-filter="all">Tất cả</button>
+        <button class="nav-btn" data-filter="bloxfruits">Blox Fruits</button>
+        <button class="nav-btn" data-filter="growagarden">Grow a Garden</button>
+        <button class="nav-btn" data-filter="stealabrainot">Steal a Brainot</button>
+        <button class="nav-btn" data-filter="robux">Robux</button>
+      </nav>
+      <div class="contact-actions">
+        <a href="#contact" class="btn small">Liên hệ</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Shop vật phẩm Roblox — Uy tín & Nhanh chóng</h1>
+        <p>Chuyên bán: Blox Fruits, Grow a Garden, Steal a Brainot và gói Robux. Thanh toán qua Zalo/Discord/Roblox.</p>
+      </div>
+    </section>
+
+    <section class="container products-section">
+      <h2>Sản phẩm</h2>
+      <div id="productsGrid" class="products-grid">
+        <!-- products injected by JS -->
+      </div>
+    </section>
+
+    <section class="container howitworks">
+      <h2>Hướng dẫn mua hàng</h2>
+      <ol>
+        <li>Chọn sản phẩm, bấm <b>"Mua ngay"</b>.</li>
+        <li>Sao chép thông tin sản phẩm hoặc gửi trực tiếp qua Zalo/Discord/Roblox theo hướng dẫn trong hộp mua.</li>
+        <li>Thanh toán và nhận vật phẩm theo thỏa thuận.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Liên hệ</h2>
+      <p>Discord: <b>your-discord#1234</b> · Zalo: <b>+84 9xxxxxxxx</b> · Roblox: <b>YourShopName</b></p>
+      <form id="contactForm" class="contact-form" onsubmit="return false;">
+        <label>Tên<br/><input id="cName" placeholder="Tên của bạn" /></label>
+        <label>Email hoặc Zalo/Discord<br/><input id="cContact" placeholder="Email / Zalo / Discord" /></label>
+        <label>Nội dung<br/><textarea id="cMessage" placeholder="Nội dung..."></textarea></label>
+        <button class="btn" id="sendContact">Gửi liên hệ</button>
+      </form>
+      <p class="note">Lưu ý: website chỉ tạo danh sách & mô tả sản phẩm — xử lý giao dịch trực tiếp qua kênh liên hệ.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ShopRobloxVN — Liên hệ: your-discord#1234</p>
+    </div>
+  </footer>
+
+  <!-- BUY MODAL -->
+  <div id="buyModal" class="modal hidden">
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div id="modalContent"></div>
+      <div class="modal-actions">
+        <button class="btn" id="copyInfo">Sao chép thông tin</button>
+        <a class="btn" id="contactLink" target="_blank" rel="noopener">Liên hệ ngay</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
